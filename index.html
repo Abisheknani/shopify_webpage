@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopify Product</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Discover the Ultimate Shopping Experience</h1>
+                <p>Shop the latest trends and enjoy exclusive deals on our featured product!</p>
+                <a href="#features" class="cta-btn">Shop Now</a>
+            </div>
+            <div class="hero-image">
+                <img src="image/images4.jpg" alt="Shopping" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <h2>Product Features</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="icon">🛒</div>
+                <h3>Easy Shopping</h3>
+                <p>Seamless and secure checkout process for a hassle-free experience.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">🚚</div>
+                <h3>Fast Delivery</h3>
+                <p>Get your products delivered quickly with our reliable shipping partners.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">💳</div>
+                <h3>Multiple Payments</h3>
+                <p>Choose from a variety of payment options to suit your needs.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">⭐</div>
+                <h3>Top Rated</h3>
+                <p>Our products are loved and highly rated by customers worldwide.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonials-list">
+            <div class="testimonial">
+                <p>"Absolutely love this product! The quality is amazing and delivery was super fast."</p>
+                <span>-Abishek </span>
+            </div>
+            <div class="testimonial">
+                <p>"Great customer service and a smooth shopping experience. Highly recommend!"</p>
+                <span>-Jayaprakash</span>
+            </div>
+            <div class="testimonial">
+                <p>"I keep coming back for more. The deals and quality are unbeatable."</p>
+                <span>- Priya.</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="#">Terms</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="footer-copy">&copy; 2025 Shopify Product. All rights reserved.</div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    e.preventDefault();
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
